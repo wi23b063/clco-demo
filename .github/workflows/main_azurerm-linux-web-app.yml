@@ -63,9 +63,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_D60439F97CAC41DDBAE1D2A9E56A7E17 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_87499D88FA544F449C5089CF7611144A }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_CA715F2446644C9DB0EF5B09AE8F8588 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_3CEAC0F5CCB7459CBBC24B62BB36B423 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_A6A89A51AD134CDFBE6F44D9ED57AE86 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_44E5E65533744C9D9A628CFE2A4BB263 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -73,5 +73,4 @@ jobs:
         with:
           app-name: 'azurerm-linux-web-app'
           slot-name: 'Production'
-
           
